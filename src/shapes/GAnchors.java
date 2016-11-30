@@ -7,13 +7,13 @@ import java.util.Vector;
 
 import constants.GConstants.EAnchors;
 
-public class Anchors extends Vector<Ellipse2D.Double>{
+public class GAnchors extends Vector<Ellipse2D.Double>{
 	private static final long serialVersionUID = 1L;
 	
 	public final static int ANCHORWIDTH = 8;
 	public final static int ANCHORHEIGHT = 8;
 	
-	public Anchors() {
+	public GAnchors() {
 		for (int i=0; i<EAnchors.values().length-1; i++) {			
 			this.add(new Ellipse2D.Double(0, 0, ANCHORWIDTH, ANCHORHEIGHT));
 		}

@@ -1,6 +1,9 @@
 package constants;
 
 import shapes.GShape;
+
+import java.awt.Cursor;
+
 import shapes.GLine;
 import shapes.GPolygon;
 import shapes.GRectangle;
@@ -11,7 +14,24 @@ public class GConstants {
 	public final static String FILEMENU_TITLE = "File";
 	public final static String EDITMENU_TITLE = "Edit";
 	
-	public enum EAnchors {NN, NE, NW, SS, SE, SW, EE, WW, RR, MM};
+	public enum EAnchors {
+		NN(new Cursor(Cursor.N_RESIZE_CURSOR)), 
+		NE(new Cursor(Cursor.NE_RESIZE_CURSOR)), 
+		NW(new Cursor(Cursor.NW_RESIZE_CURSOR)), 
+		SS(new Cursor(Cursor.S_RESIZE_CURSOR)), 
+		SE(new Cursor(Cursor.SE_RESIZE_CURSOR)), 
+		SW(new Cursor(Cursor.SW_RESIZE_CURSOR)), 
+		EE(new Cursor(Cursor.E_RESIZE_CURSOR)), 
+		WW(new Cursor(Cursor.W_RESIZE_CURSOR)), 
+		RR(new Cursor(Cursor.HAND_CURSOR)), 
+		MM(new Cursor(Cursor.MOVE_CURSOR));
+		
+		private Cursor cursor;
+		private EAnchors(Cursor cursor) { 
+			this.cursor = cursor; 
+		}
+		public Cursor getCursor() {	return this.cursor;	}
+	};
 
 	public static enum EMainFrame {
 		X(100), Y(100), W(400), H(600);
