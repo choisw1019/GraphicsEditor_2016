@@ -27,4 +27,34 @@ public class GPolygon extends GShape {
 	public void continueDrawing(int x, int y, Graphics2D g2D) {
 		this.polygon.addPoint(x, y);
 	}
+	@Override
+	public void initTransforming(int x, int y, Graphics2D g2d) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void keepTransforming(int x, int y, Graphics2D g2d) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void finishTransforming(int x, int y, Graphics2D g2d) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void initResizing(int x, int y, Graphics2D g2d) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void keepResizing(int x, int y, Graphics2D g2d) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void finishResizing(int x, int y, Graphics2D g2d) {
+		// TODO Auto-generated method stub
+		
+	}
 }

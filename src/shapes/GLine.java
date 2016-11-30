@@ -22,4 +22,34 @@ public class GLine extends GShape {
 		this.line.setLine(this.line.getX1(), this.line.getY1(), x, y);
 		this.draw(g2D);
 	}
+	@Override
+	public void initTransforming(int x, int y, Graphics2D g2d) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void keepTransforming(int x, int y, Graphics2D g2d) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void finishTransforming(int x, int y, Graphics2D g2d) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void initResizing(int x, int y, Graphics2D g2d) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void keepResizing(int x, int y, Graphics2D g2d) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void finishResizing(int x, int y, Graphics2D g2d) {
+		// TODO Auto-generated method stub
+		
+	}
 }
